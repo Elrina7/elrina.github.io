@@ -1,0 +1,248 @@
+/*宣言部分は；で重ねられる*/
+/*front-sizeで指定できるもの
+	数値(-px)
+	比率(-em)
+	xx-small	:最極小
+	x-small		:極小
+	small		:小
+	medium		:中
+	large		:大
+	x-large		:極大
+	xx-large	:最極大
+	smaller		:ひと回り小さく
+	larger		:ひと回り大きく
+*/
+
+
+/*フォントの種類
+{front-family:'メイリオ','Hiragino Kaku Gothic Pro',sans-serif}
+			  MS Pゴシック
+			  MS P明朝
+{front-family:'Arial Black',sans-serif}
+			  Arial
+			  Courier
+			  Times New Roman*/
+			  
+			  
+/*色はrgb(0,0,0)赤緑青(0~255)のように調整できる、また直接色指定できる色もある
+	rgba()は半透明*/
+
+/*ボックスを罫線で囲うborderは　h1{border:solid 5px orange}のように種類　太さ　色の順で表現できる
+	dotted(点線)dashed(破線)solid(実線)double(二重線)groove(立体枠)
+	border-top right bottom left*/
+			  
+body	{front-family:'メイリオ',
+		'Hiragino Kaku Gothic Pro',
+		sans-serif;
+		background-color:lightcyan;
+		margin:0;}
+		
+/*タイトル*/
+h1		{front-size:38px;/*文字の大きさ*/
+		border-bottom:solid 5px aqua;
+		margin-top: 0;
+		margin-bottom:0}	/*余白削除*/
+		
+
+	
+
+p		{line-height:1.5/*行の間隔*/
+		}
+
+/*ヘッダー*/
+header h2			{font-size:24px;/*文字の大きさ*/
+					width:900px;
+					margin-top:0;		/*余白を消す*/
+					margin-bottom:0;
+					margin-left:auto;
+					margin-right:auto;
+					}
+				
+header				{background-color:lightsteelblue;
+					border-bottom:solid 2px #aaaaaa;
+					margin-bottom:30px;
+					margin-top: 0;
+					-webkit-box-shadow:0 1px 7px #aaaaaa;/*影(横　縦　ぼかし幅　色)*/
+					box-shadow:0 1px 7px #aaaaaa;
+					padding-top:2px;
+					}
+header h2 img		{vertical-align:-10px;
+					margin-right:5px;
+					}
+
+/*ナビゲーション*/
+nav	ul				{list-style-type;none;
+					margin-top:0;		/*余白を消す*/
+					margin-bottom:0;
+					padding-left:10px;
+					font-size:0
+					}
+					
+nav li				{display:inline;	/*リンクを横に表示*/
+					font-size:12px;
+					border-right: solid 1px darkblue;	/*横の罫線*/
+					}
+nav li:first-child	{border-left:solid 1px darkblue;}
+
+nav					{width:900px;
+					margin-left:auto;
+					margin-right:auto;
+					text-align:right;			/*右側に配置*/
+					margin-top:-19px;
+					}
+
+/*homeへのリンク*/		
+header h2 a			{text-decoration: none;
+					color:#000000;			/*リンクの文字*/
+					}
+header h2 a:hover	{color:#000000;}		/*カーソルが合った時の色*/
+
+
+/*記事*/
+article,#message	{background-color:#ffffff;
+		width:900px;				/*横幅*/
+	   /*height:*/					/*高さ*/
+		margin-left:auto;			/*記事を中央*/
+		margin-right:auto;			/*borderの外の余白*/
+
+		border:solid 1px #aaaaaa;	/*枠で囲う*/
+		padding:15px;				/*余白を入れる*/
+			/*フッターとboxを揃える*/
+		-webkit-box-sizing: border-box;	/*IOS*/
+		-moz-box-sizing: border-box;	/*Firefox*/
+		box-sizing: border-box;
+		margin-bottom:15px;
+		-webkit-box-shadow:1px 1px 3px #aaaaaa;/*影(横　縦　ぼかし幅　色)*/
+		box-shadow:1px 1px 3px #aaaaaa;
+		border-radius:20px; /*角を丸める(左上　右上　右下　左下)　*/
+		}
+
+
+/*フッター*/
+footer	{width: 900px;
+		margin-left:auto;
+		margin-right:auto
+		}
+
+/*リンク*/
+	
+a img			{border:none;}		/*罫線の削除*/
+
+a				{text-decoration:none;}
+a:hover			{color:orange;}		/*カーソルがきたときの色*/
+
+/*informationのCSS*/
+#posts article h1	{font-size:24px;}
+
+#posts h3			{font-size:32px;
+					color:white;
+					background-color:black;
+					padding-left:10px}
+#posts h1			{border:none;}
+
+#posts section 		{width:900px;
+					margin-left:auto;
+					margin-right:auto;
+					}
+#posts header		{margin-bottom:20px;
+					}
+#posts time			{font-size:12px;			/*時間*/
+					color:black;
+					background-color:#bdbc8F;
+					border-radius:10px;
+					padding:2px 20px 2px 20px;
+					}
+#posts article a	{color:#000000;				/*選択したら色変わるやつ*/
+					text-decoration:none;
+					}
+#posts article a:hover	{background-color:darkturquoise;}
+						
+/*topページ*/
+
+#top header			{margin-bottom:0;}			/*隙間をなくす*/
+#photo				{background-image:url(top_pic.jpg);/*背景の画像の設定*/
+					background-repeat:no-repeat;
+					background-position:50% 0;
+					text-align:center;
+					padding-top:320px;
+					padding-bottom:80px;
+					}
+#photo h1			{color:tomato;
+					font-size:60px;
+					front-family:'MS Pゴシック','Hiragino Kaku Gothic Pro',sans-serif;
+					border-bottom:none;
+					text-shadow:0 5px 10px #000000;
+					}
+#photo p			{color:brack;
+					font-size:20px;
+					font-weight:bold;}
+
+#photo a			{background-color:rgba(0,194,255,0.5);/*0.5は透明度*/
+					background-image:liner-gradient(
+					to bottom,
+					rgba(0,194,255) 0%
+					rgba(70,130,180) 100%);
+					padding:10px 80px;
+					border-radius:10px;
+					color:black;
+					font-weight:bold;
+					text-decoration:none}
+
+/*メニュー*/
+
+#container 			{width:900px;
+					margin-left:auto;
+					margin-right:auto;
+					}
+#contain			{width:600px;
+					float:left;
+					}
+#menu				{width:270px;
+					float:right;
+					}
+#contain article	{width:auto;}
+#contain img		{width:400px;}
+
+#menu aside			{background-color:#ffffff;
+					border:solid 1px #aaaaaa;
+					padding:20px;
+					margin-top:0;
+					margin-bottom:30px;
+					-webkit-box-shadow:1px 1px 3px #aaaaaa;
+					box-shadow:1px 1px 3px #aaaaaa;
+					border-radius:20px;
+					}
+
+
+
+/*ごったごた*/
+
+
+#hogehoge p	{padding:1px;
+			margin:0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					
+
+
