@@ -1,4 +1,4 @@
-/*宣言部分は；で重ねられる*/
+﻿/*宣言部分は；で重ねられる*/
 /*front-sizeで指定できるもの
 	数値(-px)
 	比率(-em)
@@ -218,15 +218,29 @@ a:hover			{color:orange;}		/*カーソルがきたときの色*/
 /*ごったごた*/
 
 
-#hogehoge p	{padding:1px;
+#mag p	{padding:1px;
 			margin:0;}
 
 
 
+/*記事移動するやつ*/
+#move					{width:400px;
+						margin-left:auto;
+						margin-right:auto;}
+#move li				{font-size:14px;
+						display:inline;	/*リンクを横に表示*/
+						}
 
-
-
-
+#move li:first-child	{padding-left:110px;}
+#move h1				{background-color:lightblue;
+						border-bottom:none;
+						margin-top:0;
+						padding-top:0;
+						padding-bottom:0;
+						-webkit-box-shadow:1px 1px 3px darkblue;
+						box-shadow:1px 1px 3px darkblue;
+						border-radius:20px;
+						}
 
 
 
