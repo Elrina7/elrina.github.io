@@ -42,9 +42,9 @@ var html = "";
 html +='<aside>'
 html += '<h1>更新情報</h1>';
 html += '<ul>';
+html +='<li><a href ="プリンセスプリンシパル.html">プリンセスプリンシパル(2019/04/14)</a></li>';
 html +='<li><a href = "蒼の彼方のフォーリズム.html">蒼の彼方のフォーリズム(2019/04/04)</a></li>'
 html +='<li><a href ="erg_category.html">エロゲまとめ(2019/04/01)</a></li>';
-html +='<li><a href ="一番上の記事.html">一番上の記事(2019/04/02)</a></li>';
 html +='</ul>';
 html +='</aside>';
 	
