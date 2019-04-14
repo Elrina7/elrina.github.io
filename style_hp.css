@@ -231,7 +231,7 @@ a:hover			{color:orange;}		/*カーソルがきたときの色*/
 						display:inline;	/*リンクを横に表示*/
 						}
 
-#move li:first-child	{padding-left:110px;}
+#move li:first-child	{padding-left:25%}
 #move h1				{background-color:lightblue;
 						border-bottom:none;
 						margin-top:0;
