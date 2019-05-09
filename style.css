@@ -21,4 +21,5 @@ button{
 	
 }
 section{margin:15px;}
-#move #re  {padding-left:45%;}
+#move #re  {padding-left:45%;
+			padding-right:45%;}
